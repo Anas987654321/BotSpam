@@ -1,3 +1,4 @@
+const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "1";
 
@@ -30,4 +31,4 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
  });
 
  
-client.login("NTExODYyNjE0MDgzNzY0MjQ3.DsxE4Q.F9l-fxk2RtgJp9yN3XVkbp4YjWY");
+client.login(process.env.BOT_TOKEN);
